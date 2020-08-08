@@ -5,7 +5,7 @@ import synthpops as sp
 
 if __name__ == '__main__':
     n = int(50e3)
-    population = sp.make_population(n=n, with_industry_code=True)
+    population = sp.api.make_population(n=n)
 
     uids = population.keys()
     uids = [uid for uid in uids]

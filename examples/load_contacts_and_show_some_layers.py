@@ -4,10 +4,11 @@ Populations have demographics (age, sex) from data.
 Not an exhaustive list of what synthpops can do - please take a look through the code base for the many possibilities.
 """
 
-import synthpops as sp
+from synthpops import synthpops as sp
 import sciris as sc
 import numpy as np
 import os
+
 
 def show_layers(popdict,show_ages=False):
 
@@ -31,7 +32,9 @@ def show_layers(popdict,show_ages=False):
 
 if __name__ == '__main__':
 
-    datadir = sp.datadir # point datadir where your data folder lives
+
+
+    datadir = 'synthpops/data' # point datadir where your data folder lives
 
     # location information - currently we only support the Seattle Metro area in full, however other locations can be supported with this framework at a later date
     location = 'seattle_metro'
